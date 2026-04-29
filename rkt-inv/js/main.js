@@ -199,7 +199,7 @@ function startCountdown() {
 document.getElementById('calendarBtn')?.addEventListener('click', function () {
   // encodeURIComponent = encode teks agar aman untuk URL
   // Spasi jadi %20, & jadi %26, dll
-  const title = encodeURIComponent('Pernikahan Arjuna & Sinta');
+  const title = encodeURIComponent('ST18 for Rakote Coffee');
   
   // Format tanggal Google Calendar: YYYYMMDDTHHMMSS
   // 2025-06-14 08:00 → 20250614T080000
