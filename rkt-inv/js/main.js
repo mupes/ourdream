@@ -20,15 +20,11 @@
   // Jika nama ditemukan (tidak null/undefined)
   if (name) {
     // Cari elemen HTML dengan id="guest-name"
-    const el = document.getElementById('guest-name');
-    
-    // Jika elemen ditemukan (tidak null)
-    if (el) {
-      // decodeURIComponent: mengubah %20 jadi spasi, %C3%A9 jadi é, dll
-      // Penting agar nama dengan spasi/karakter khusus tampil benar
-      el.textContent = decodeURIComponent(name);
-      // textContent = mengganti teks dalam elemen (lebih aman dari XSS daripada innerHTML)
-    }
+    const decodedName = decodeURIComponent(name);
+    const elements = document.querySelectorAll('.guest-name');
+    elements.forEach(el => {
+      el.textContent = decodedName; 
+    });
   }
   // Fungsi langsung selesai eksekusi di sini
 })();
@@ -142,7 +138,7 @@ document.getElementById('openBtn')?.addEventListener('click', function () {
 // ═════════════════════════════════════════════════
 // Konstanta: Tanggal acara dalam format ISO 8601
 // Format: 'YYYY-MM-DDTHH:mm:ss' (T = pemisah tanggal & waktu)
-const WEDDING_DATE = new Date('2026-05-02T08:00:00');
+const WEDDING_DATE = new Date('2026-05-02T14:00:00');
 // new Date() = objek JavaScript untuk manipulasi tanggal/waktu
 
 // Fungsi utama countdown
