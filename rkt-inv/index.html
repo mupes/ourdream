@@ -1,281 +1,90 @@
 <!DOCTYPE html>
-<!-- 
-  DEKLARASI TIPE DOKUMEN HTML5
-  Memberitahu browser bahwa ini adalah dokumen HTML5 modern
--->
+
 <html lang="id">
-<!-- 
-  ELEMEN ROOT HTML
-  lang="id" = Bahasa Indonesia (penting untuk SEO dan aksesibilitas)
--->
 
 <head>
-  <!-- BAGIAN HEAD: Berisi metadata yang tidak tampil di halaman -->
-  
   <meta charset="UTF-8" />
-  <!-- 
-    PENGATURAN KARAKTER UTF-8
-    Mendukung semua karakter (termasuk emoji dan aksara Arab)
-    WAJIB ada di setiap HTML
-  -->
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 
-    RESPONSIVE DESIGN
-    width=device-width = Lebar mengikuti layar device
-    initial-scale=1.0 = Zoom awal 100%
-    PENTING untuk tampilan mobile yang bagus
-  -->
-  
-  <title>RAKOTE COFFEE</title>
-  <!-- 
-    JUDUL HALAMAN
-    Muncul di tab browser dan hasil pencarian Google
-    Rekomendasi: 50-60 karakter
-  -->
-  
-  <!-- OPEN GRAPH METADATA (Untuk preview saat share di sosmed) -->
+  <title>Rakote Coffee</title>
   <meta property="og:title" content="Undangan Re-Opening RAKOTE COFFEE" />
-  <!-- Judul yang muncul saat link dibagikan di WhatsApp/Facebook -->
-  
   <meta property="og:description" content="Dengan penuh kebahagiaan kami mengundang Anda ke acara sakral re-opening Rakote Coffee." />
-  <!-- Deskripsi singkat untuk preview sosmed -->
-  
   <meta property="og:image" content="assets/og-image.jpg" />
-  <!-- 
-    GAMBAR PREVIEW SOSMED
-    📸 REKOMENDASI RESOLUSI: 1200 x 630 pixel (rasio 1.91:1)
-    Format: JPG/PNG
-    Ukuran max: 5MB
-    Ini gambar yang muncul saat link di-share
-  -->
-
-  <!-- FONTS: Mengambil font dari Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <!-- Preconnect: Mempercepat loading dengan menyiapkan koneksi ke server Google -->
-  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- crossorigin: Izinkan loading font dari domain berbeda -->
-  
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
-  <!-- 
-    IMPORT 3 FONT GOOGLE:
-    1. Cormorant Garamond = Font serif elegan (untuk judul)
-    2. Jost = Font sans-serif modern (untuk teks body)
-    3. Great Vibes = Font script/tulisan tangan (untuk nama)
-    display=swap = Teks tetap muncul meski font belum load
-  -->
-
   <link rel="stylesheet" href="css/style.css" />
-  <!-- 
-    MENGHUBUNGKAN FILE CSS EKSTERNAL
-    File style.css berisi semua styling/warna/layout
-    Letak: folder css/style.css
-  -->
 </head>
 
 <body>
-  <!-- BAGIAN BODY: Semua konten yang tampil di halaman -->
-
   <!-- ═══════════════════════════════════════ COVER ═══════════════ -->
-  <!-- SECTION COVER: Halaman depan yang pertama kali dilihat -->
   <section id="cover">
-    <!-- id="cover" = Identifier unik untuk manipulasi JavaScript/CSS -->
-    
     <div class="cover-bg"></div>
-    <!-- 
-      BACKGROUND COVER
-      Biasanya berisi gambar background atau gradient
-      Class untuk styling di CSS
-    -->
-    
     <div class="petals-container" id="petals"></div>
-    <!-- 
-      CONTAINER EFEK KELPAK BUNGA
-      id="petals" = Target JavaScript untuk animasi kelopak jatuh
-      Akan diisi dinamis oleh JS
-    -->
-    
     <div class="cover-content">
-      <!-- Wrapper untuk semua konten di cover -->
-      
       <p class="cover-bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
-      <!-- 
-        TULISAN BISMILLAH (Bahasa Arab)
-        Class untuk styling font Arab yang elegan
-      -->
-      
-      <p class="cover-label">Undangan Re-Opening Rakote Coffee</p>
-      <!-- Label/judul kecil di atas nama -->
-      
+      <p class="cover-label">Teruntuk Kamu Sahabat, Dengan Kelembutan Hati Kami Kirimkan Undangan Re-Opening Rakote Coffee</p>
       <h1 class="cover-names">
-        <!-- 
-          HEADING 1 (Judul Utama)
-          SEO: Gunakan h1 hanya sekali per halaman
-          Class untuk styling nama yang besar
-        -->
-        
-        <span class="name-groom">100% Arabica</span>
-        <!-- Nama "mempelai pria" (produk pertama) -->
-        
-        <span class="cover-ampersand">&amp;</span>
-        <!-- Simbol "&" (&amp; = HTML entity untuk &) -->
-        
-        <span class="name-bride">Bahan Premium</span>
-        <!-- Nama "mempelai wanita" (produk kedua) -->
+        <span class="name-groom">RAKOTE COFFEE:</span>
+        <span class="name-bride">Premium Taste, Everyday Price</span>
       </h1>
       
-      <p class="cover-date">Sabtu, 1 Mei 2026</p>
-      <!-- Tanggal acara -->
+      <p class="cover-date">Sabtu, 2 Mei 2026</p>
       
       <div class="cover-divider">
-        <!-- Garis pemisah dengan ikon hias -->
         <span></span>
-        <!-- Garis kiri (akan distyling CSS dengan ::before atau border) -->
-        
         <svg width="24" height="24" viewBox="0 0 24 24">
-          <!-- 
-            SVG ICON: Ikon vektor yang tidak pecah saat diperbesar
-            width/height = Ukuran tampilan
-            viewBox = Sistem koordinat SVG
-          -->
           <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="currentColor"/>
-          <!-- Path data: Koordinat bentuk ikon (seperti ikon informasi) -->
         </svg>
-        
         <span></span>
-        <!-- Garis kanan -->
       </div>
       
       <p class="cover-to">Kepada Yth. <span id="guest-name">Bapak/Ibu/Saudara/i</span></p>
-      <!-- 
-        UCAPAN KEPADA TAMU
-        id="guest-name" = Bisa diganti dinamis via JavaScript (URL parameter)
-        Contoh: ?nama=Budi → "Kepada Yth. Budi"
-      -->
-      
-      <button class="open-btn" id="openBtn">
-        <!-- 
-          TOMBOL BUKA UNDANGAN
-          id="openBtn" = Target JavaScript untuk event click
-          class="open-btn" = Styling tombol
-        -->
-        
+
+      <button class="open-btn" id="openBtn">  
         <span>Buka Undangan</span>
-        <!-- Teks tombol -->
-        
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <!-- SVG Icon panah bawah -->
           <path d="M12 5v14M5 12l7 7 7-7"/>
-          <!-- Garis vertikal + panah -->
         </svg>
       </button>
     </div>
-    
     <div class="floral-top"></div>
-    <!-- Hiasan bunga di atas (biasanya background image atau SVG) -->
-    
+    <!-- Hiasan bunga di atas  -->
     <div class="floral-bottom"></div>
     <!-- Hiasan bunga di bawah -->
+  
   </section>
-
   <!-- ═══════════════════════════════════════ MAIN CONTENT ════════ -->
-  <!-- KONTEN UTAMA: Muncul setelah tombol "Buka Undangan" ditekan -->
   <main id="mainContent" class="hidden">
-    <!-- 
-      ELEMEN <main>: Konten utama halaman (SEO friendly)
-      id="mainContent" = Target JavaScript untuk show/hide
-      class="hidden" = Awalnya disembunyikan (display: none di CSS)
-    -->
-
-    <!-- HERO SECTION: Bagian pembuka dengan quote -->
     <section class="section hero-section">
-      <!-- 
-        class="section" = Styling umum untuk setiap section
-        class="hero-section" = Styling khusus section hero
-      -->
-      
       <div class="ornament-line"></div>
-      <!-- Garis hiasan ornamental -->
-      
       <p class="section-subtitle fade-up">Dengan memohon rahmat dan ridho Allah SWT</p>
-      <!-- 
-        Subtitle section
-        class="fade-up" = Animasi muncul dari bawah (saat scroll)
-      -->
-      
       <h2 class="section-title-script fade-up">Kami Mengundang</h2>
-      <!-- 
-        HEADING 2 (Sub-judul)
-        Boleh banyak h2 dalam satu halaman
-        Font script/tulisan tangan
-      -->
+      <p class="section-subtitle fade-up mb-spacer">Yth. <span id="guest-name">Bapak/Ibu/Saudara/i</span></p>
+      <div class="ornament-line"></div>
       
       <p class="hero-verse fade-up">
-        <!-- Quote/ayat -->
         "Maka nikmat Tuhanmu yang manakah yang kamu dustakan?"
         <em>– QS. Ar-Rahman: 13</em>
-        <!-- <em> = Italic (emphasis) untuk sumber ayat -->
       </p>
-      
       <div class="ornament-line"></div>
-      <!-- Garis hiasan penutup -->
+     
     </section>
-
-    <!-- COUPLE SECTION: Bagian profil produk -->
+    <!-- PROFIL PRODUK -->
     <section class="section couple-section">
-      <h2 class="section-heading fade-up">Biji Kopi</h2>
-      <!-- Judul section dengan heading 2 -->
-      
+      <h2 class="section-heading fade-up">Tentang Rakote Coffee</h2>
       <div class="couple-grid">
-        <!-- Grid layout untuk 2 kolom (kiri & kanan) -->
-        
         <div class="person-card fade-left">
-          <!-- 
-            Kartu profil kiri (Arabica)
-            class="fade-left" = Animasi muncul dari kiri
-          -->
-          
           <div class="person-photo-wrap">
-            <!-- Wrapper untuk efek border/frame foto -->
-            
             <div class="person-photo" style="background-image:url('assets/groom.jpg')"></div>
-            <!-- 
-              FOTO PRODUK 1 (Groom/Arabica)
-              📸 REKOMENDASI RESOLUSI: 600 x 800 pixel (rasio 3:4 portrait)
-              Format: JPG (kualitas 80-90%)
-              Ukuran max: 500KB
-              Background image lebih baik untuk cover daripada <img>
-            -->
           </div>
-          
-          <h3 class="person-name">100% arabica</h3>
-          <!-- HEADING 3 (Nama produk) -->
-          
-          <p class="person-desc">Didapatkan langsung dari<br/>Beberapa Daerah Nusantara &amp; Amerika Selatan</p>
-          <!-- 
-            Deskripsi produk
-            <br/> = Line break (ganti baris)
-            &amp; = Simbol &
-          -->
-          
+          <h3 class="person-name">BAHAN PREMIUM</h3>
+          <p class="person-desc">Seluruh bahan Rakote Coffee<br/>merupakan bahan berkualitas dengan grade tinggi</p>
           <div class="person-social">
-            <!-- Ikon sosial media -->
-            <a href="#" aria-label="Instagram">
-              <!-- 
-                LINK SOSMED
-                href="#" = Ganti dengan link Instagram asli
-                aria-label = Aksesibilitas untuk screen reader
-              -->
-              
+            <a href="https://www.instagram.com/rakotecoffee/" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <!-- SVG Icon Instagram -->
                 <rect x="2" y="2" width="20" height="20" rx="5"/>
-                <!-- Kotak rounded (rx=5) -->
                 <circle cx="12" cy="12" r="4"/>
-                <!-- Lingkaran tengah -->
                 <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
-                <!-- Titik kecil pojok (ikon kamera) -->
               </svg>
             </a>
           </div>
@@ -284,35 +93,23 @@
         <div class="couple-heart fade-up">
           <!-- Icon hati di tengah -->
           <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
-            <!-- SVG Heart outline -->
             <path d="M50 85 C50 85 5 55 5 28 C5 12 17 2 30 2 C38 2 46 6 50 13 C54 6 62 2 70 2 C83 2 95 12 95 28 C95 55 50 85 50 85Z" fill="none" stroke="currentColor" stroke-width="2"/>
-            <!-- Path heart shape -->
           </svg>
         </div>
         
         <div class="person-card fade-right">
-          <!-- Kartu profil kanan (Bahan Premium) -->
-          
+          <!--  profil kanan -->
           <div class="person-photo-wrap">
             <div class="person-photo" style="background-image:url('assets/bride.jpg')"></div>
-            <!-- 
-              FOTO PRODUK 2 (Bride/Bahan Premium)
-              📸 REKOMENDASI RESOLUSI: 600 x 800 pixel (rasio 3:4 portrait)
-              Format: JPG
-              Ukuran max: 500KB
-              Usahakan ukuran sama dengan foto pertama
-            -->
           </div>
           
-          <h3 class="person-name">Bahan Premium</h3>
-          <p class="person-desc">Terdiri dari<br/>Susu Premium &amp; Bahan Utama Lainnya</p>
+          <h3 class="person-name">HARGA TERJANGKAU</h3>
+          <p class="person-desc">Rasa bukan soal biaya.<br/>Rakote Coffee menawarkan minuman premium dengan harga affordable</p>
           
           <div class="person-social">
-            <a href="#" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <rect x="2" y="2" width="20" height="20" rx="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            <a href="https://www.tiktok.com/@rakote.coffee" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
               </svg>
             </a>
           </div>
@@ -320,100 +117,54 @@
       </div>
     </section>
 
-    <!-- COUNTDOWN SECTION: Hitung mundur acara -->
+    <!-- COUNTDOWN SECTION: -->
     <section class="section countdown-section">
       <div class="countdown-bg"></div>
-      <!-- Background section (biasanya gambar atau gradient) -->
-      
       <div class="countdown-inner">
-        <!-- Container konten countdown -->
-        
         <p class="section-subtitle fade-up" style="color:var(--cream)">Menuju Hari Bahagia</p>
-        <!-- Subtitle dengan warna CSS variable --cream -->
-        
         <h2 class="section-title-script fade-up" style="color:var(--gold)">Save The Date</h2>
-        <!-- Judul dengan warna emas -->
-        
-        <p class="countdown-date fade-up">Sabtu, 1 Mei 2026</p>
-        <!-- Tanggal tetap (fallback jika JS gagal) -->
+        <p class="countdown-date fade-up">Sabtu, 2 Mei 2026</p>
         
         <div class="countdown-grid fade-up" id="countdown">
-          <!-- 
-            GRID COUNTDOWN
-            id="countdown" = Target JavaScript untuk update waktu
-            Akan diisi angka dinamis oleh JS
-          -->
-          
           <div class="countdown-item"><span id="cd-days">00</span><label>Hari</label></div>
-          <!-- Kotak hari: id="cd-days" target JS -->
-          
           <div class="countdown-sep">:</div>
-          <!-- Pemisah titik dua -->
-          
           <div class="countdown-item"><span id="cd-hours">00</span><label>Jam</label></div>
-          <!-- Kotak jam -->
-          
           <div class="countdown-sep">:</div>
-          
           <div class="countdown-item"><span id="cd-mins">00</span><label>Menit</label></div>
-          <!-- Kotak menit -->
-          
           <div class="countdown-sep">:</div>
-          
           <div class="countdown-item"><span id="cd-secs">00</span><label>Detik</label></div>
-          <!-- Kotak detik -->
         </div>
         
         <button class="btn-outline" id="calendarBtn">+ Tambahkan ke Kalender</button>
-        <!-- 
-          TOMBOL ADD TO CALENDAR
-          id="calendarBtn" = Target JavaScript untuk generate file .ics
-        -->
       </div>
     </section>
 
     <!-- EVENTS SECTION: Informasi acara -->
     <section class="section events-section">
-      <h2 class="section-heading fade-up">Acara</h2>
-      
+      <h2 class="section-heading fade-up">AGENDA UNTUK SAHABAT</h2>
       <div class="events-grid">
-        <!-- Grid 2 kolom untuk 2 acara -->
-        
         <div class="event-card fade-left">
-          <!-- Kartu acara 1 (Akad Nikah) -->
-          
           <div class="event-icon">
-            <!-- Icon acara -->
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-              <!-- SVG Icon gedung/bangunan -->
               <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <!-- Atap -->
               <path d="M2 17l10 5 10-5"/>
-              <!-- Lantai 2 -->
               <path d="M2 12l10 5 10-5"/>
-              <!-- Lantai 1 -->
             </svg>
           </div>
           
-          <h3 class="event-title">Akad Nikah</h3>
-          <!-- Judul acara -->
-          
+          <h3 class="event-title">Promo Re-Opening</h3>
           <div class="event-detail">
-            <!-- Detail: Tanggal -->
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <!-- SVG Icon kalender -->
               <rect x="3" y="4" width="18" height="18" rx="2"/>
               <line x1="16" y1="2" x2="16" y2="6"/>
               <line x1="8" y1="2" x2="8" y2="6"/>
               <line x1="3" y1="10" x2="21" y2="10"/>
             </svg>
-            Sabtu, 1 Mei 2026
+            Sabtu, 25 April 2026 s.d. Sabtu, 2 Mei 2026
           </div>
           
           <div class="event-detail">
-            <!-- Detail: Waktu -->
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <!-- SVG Icon jam -->
               <circle cx="12" cy="12" r="10"/>
               <polyline points="12 6 12 12 16 14"/>
             </svg>
@@ -421,24 +172,15 @@
           </div>
           
           <div class="event-detail">
-            <!-- Detail: Lokasi -->
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <!-- SVG Icon lokasi/map pin -->
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
-            Rakote Coffee, Jl. Kramat Jaya Baru II No.1, Johar Baru, Kec. Johar Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10560
+            Rakote Coffee, Jl. Kramat Jaya Baru, Johar Baru, Kec. Johar Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10560
           </div>
-          
+        
           <a href="https://maps.app.goo.gl/yaZr8YQT5ozHQZgy5" target="_blank" class="btn-map">
-            <!-- 
-              LINK GOOGLE MAPS
-              target="_blank" = Buka di tab baru
-              href = Short link Google Maps
-            -->
-            
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <!-- Icon maps -->
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
@@ -447,8 +189,6 @@
         </div>
 
         <div class="event-card fade-right">
-          <!-- Kartu acara 2 (Promo) -->
-          
           <div class="event-icon">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
               <!-- SVG Icon hati (promo spesial) -->
@@ -456,7 +196,7 @@
             </svg>
           </div>
           
-          <h3 class="event-title">Promo Angkatan ST 18</h3>
+          <h3 class="event-title">Promo Khusus STSN 18</h3>
           
           <div class="event-detail">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -465,7 +205,7 @@
               <line x1="8" y1="2" x2="8" y2="6"/>
               <line x1="3" y1="10" x2="21" y2="10"/>
             </svg>
-            Sabtu, 1 Mei 2026
+            Sabtu, 2 Mei 2026
           </div>
           
           <div class="event-detail">
@@ -481,7 +221,7 @@
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
-            Rakote Coffee, Johar Baru, Jakarta Pusat
+            Rakote Coffee, Jl. Kramat Jaya Baru, Johar Baru, Kec. Johar Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10560
           </div>
           
           <a href="https://maps.app.goo.gl/yaZr8YQT5ozHQZgy5" target="_blank" class="btn-map">
@@ -501,115 +241,49 @@
       <p class="section-subtitle fade-up">Momen Kebersamaan Rakote Coffee</p>
       
       <div class="gallery-grid fade-up" id="galleryGrid">
-        <!-- 
-          GRID GALERI
-          id="galleryGrid" = Target JavaScript untuk lightbox
-        -->
-        
         <div class="gallery-item" style="background-image:url('assets/photo1.jpg')" data-src="assets/photo1.jpg"></div>
-        <!-- 
-          FOTO GALERI 1
-          📸 REKOMENDASI RESOLUSI: 800 x 600 pixel (rasio 4:3 landscape)
-          atau 600 x 800 pixel (portrait)
-          Format: JPG (quality 80%)
-          Ukuran max: 300KB per foto
-          data-src = Untuk lightbox (tampilan full size)
-          style background-image = Tampilan thumbnail
-        -->
-        
         <div class="gallery-item" style="background-image:url('assets/photo2.jpg')" data-src="assets/photo2.jpg"></div>
-        <!-- 
-          FOTO GALERI 2
-          📸 REKOMENDASI: Sama seperti photo1.jpg
-        -->
-        
         <div class="gallery-item" style="background-image:url('assets/photo3.jpg')" data-src="assets/photo3.jpg"></div>
-        <!-- FOTO GALERI 3 -->
-        
         <div class="gallery-item" style="background-image:url('assets/photo4.jpg')" data-src="assets/photo4.jpg"></div>
-        <!-- FOTO GALERI 4 -->
-        
         <div class="gallery-item" style="background-image:url('assets/photo5.jpg')" data-src="assets/photo5.jpg"></div>
-        <!-- FOTO GALERI 5 -->
-        
         <div class="gallery-item" style="background-image:url('assets/photo6.jpg')" data-src="assets/photo6.jpg"></div>
-        <!-- FOTO GALERI 6 -->
       </div>
     </section>
 
-    <!-- LIGHTBOX: Popup untuk lihat foto full size -->
     <div class="lightbox" id="lightbox">
-      <!-- Overlay gelap untuk lightbox -->
-      
       <button class="lightbox-close" id="lightboxClose">✕</button>
-      <!-- Tombol tutup (X) -->
-      
       <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery" />
-      <!-- 
-        GAMBAR FULL SIZE
-        id="lightboxImg" = Target JavaScript untuk ganti src
-        src="" = Awalnya kosong, diisi JS saat klik foto
-      -->
     </div>
 
     <!-- RSVP SECTION: Form konfirmasi kehadiran -->
     <section class="section rsvp-section">
       <div class="rsvp-inner">
-        <!-- Container dengan background -->
-        
         <h2 class="section-heading fade-up" style="color:var(--cream)">Konfirmasi Kehadiran</h2>
         <p class="section-subtitle fade-up" style="color:rgba(255,255,255,0.7)">Kehadiran Anda adalah kebahagiaan kami</p>
 
         <div class="rsvp-form fade-up" id="rsvpForm">
-          <!-- 
-            FORM RSVP
-            id="rsvpForm" = Target JavaScript untuk handle submit
-          -->
-          
           <div class="form-group">
-            <!-- Group input (label + input) -->
             <label>Nama Lengkap *</label>
-            <!-- Label dengan * = Wajib diisi -->
-            
             <input type="text" id="rsvpName" placeholder="Masukkan nama Anda" />
-            <!-- 
-              INPUT TEXT
-              type="text" = Input teks biasa
-              id="rsvpName" = Target JS untuk ambil nilai
-              placeholder = Teks hint saat kosong
-            -->
           </div>
           
           <div class="form-group">
             <label>Nomor HP / WhatsApp *</label>
             <input type="tel" id="rsvpPhone" placeholder="08xxxxxxxxxx" />
-            <!-- type="tel" = Keyboard angka di mobile -->
           </div>
           
           <div class="form-group">
             <label>Ucapan & Doa</label>
-            <textarea id="rsvpMessage" placeholder="Tuliskan ucapan dan doa untuk mempelai..." rows="3"></textarea>
-            <!-- 
-              TEXTAREA: Input multi-line
-              rows="3" = Tinggi default 3 baris
-            -->
+            <textarea id="rsvpMessage" placeholder="Tuliskan ucapan dan doa untuk Rakote Coffee..." rows="3"></textarea>
           </div>
           
           <div class="form-group">
             <label>Konfirmasi Kehadiran *</label>
             <div class="radio-group">
-              <!-- Group radio button -->
-              
               <label class="radio-label">
                 <input type="radio" name="attend" value="hadir" /> 
-                <!-- 
-                  RADIO BUTTON
-                  name="attend" = Group (hanya 1 yang bisa dipilih)
-                  value="hadir" = Nilai yang dikirim
-                -->
                 Insya Allah Hadir
               </label>
-              
               <label class="radio-label">
                 <input type="radio" name="attend" value="tidak" /> 
                 Berhalangan Hadir
@@ -620,14 +294,7 @@
           <div class="form-group">
             <label>Jumlah Tamu</label>
             <select id="rsvpGuests">
-              <!-- 
-                DROPDOWN SELECT
-                id="rsvpGuests" = Target JS
-              -->
-              
               <option value="1">1 Orang</option>
-              <!-- Option: value = data yang dikirim, teks = tampilan -->
-              
               <option value="2">2 Orang</option>
               <option value="3">3 Orang</option>
               <option value="4">4 Orang</option>
@@ -636,7 +303,6 @@
           </div>
           
           <button class="btn-submit" id="rsvpSubmit">Kirim Konfirmasi</button>
-          <!-- Tombol submit form -->
         </div>
 
         <!-- RSVP List: Daftar ucapan tamu -->
@@ -651,96 +317,49 @@
     <!-- GIFT SECTION: Informasi rekening -->
     <section class="section gift-section">
       <h2 class="section-heading fade-up">Angpao Digital</h2>
-      <p class="section-subtitle fade-up">Doa restu Anda adalah hadiah terbaik bagi kami. Namun jika ingin memberi hadiah, ghyaskunnnn.</p>
+      <p class="section-subtitle fade-up">Doa restu Anda adalah hadiah terbaik bagi kami. Namun jika ingin memberi hadiah, OMAKKK GHYASKANNN...</p>
       
       <div class="gift-grid fade-up">
-        <!-- Grid 2 kolom untuk 2 rekening -->
-        
         <div class="gift-card">
-          <!-- Kartu rekening 1 -->
-          
-          <div class="gift-bank">🏦 BCA</div>
-          <!-- Nama bank dengan emoji -->
-          
-          <p class="gift-account-name">Arjuna Pratama</p>
-          <!-- Nama pemilik rekening -->
-          
-          <p class="gift-account-number" id="bcaNumber">1234567890</p>
-          <!-- 
-            NOMOR REKENING
-            id="bcaNumber" = Target JS untuk copy
-          -->
-          
-          <button class="btn-copy" onclick="copyText('1234567890', this)">Salin Nomor</button>
-          <!-- 
-            TOMBOL COPY
-            onclick="copyText(...)" = Jalankan fungsi JS copyText
-            Parameter: nomor rekening & tombol itu sendiri
-          -->
+          <div class="gift-bank">🏦 TOP UP EP EP</div>
+          <p class="gift-account-name">Rakote nax Baiq</p>
+          <p class="gift-account-number" id="bcaNumber">1818181818</p>
+          <button class="btn-copy" onclick="copyText('1818181818', this)">Salin Nomor</button>
         </div>
         
         <div class="gift-card">
-          <!-- Kartu rekening 2 -->
-          
-          <div class="gift-bank">🏦 Mandiri</div>
-          <p class="gift-account-name">Sinta Rahayu</p>
-          <p class="gift-account-number" id="mandiriNumber">0987654321</p>
-          <button class="btn-copy" onclick="copyText('0987654321', this)">Salin Nomor</button>
+          <div class="gift-bank">🏦 TOP UP ROBLOX</div>
+          <p class="gift-account-name">Rakote c'lalu c'mangad</p>
+          <p class="gift-account-number" id="mandiriNumber">1818181818</p>
+          <button class="btn-copy" onclick="copyText('1818181818', this)">Salin Nomor</button>
         </div>
       </div>
       
-      <p class="gift-address-title fade-up">📦 Atau kirimkan ke alamat:</p>
+      <p class="gift-address-title fade-up">📦 Atau kirimkan ke:</p>
       <p class="gift-address fade-up">Rusun Sawangan Tower B 5K</p>
-      <!-- Alamat pengiriman fisik -->
     </section>
 
     <!-- CLOSING SECTION: Penutup -->
     <section class="section closing-section">
       <div class="floral-closing"></div>
-      <!-- Hiasan bunga penutup -->
-      
       <div class="closing-inner fade-up">
         <p class="section-subtitle">Terima Kasih</p>
-        <h2 class="section-title-script">Rakote &amp; Coffee</h2>
-        
-        <p class="closing-text">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kami.</p>
-        <!-- Paragraf ucapan terima kasih -->
-        
+        <h2 class="section-title-script">Rakote Coffee</h2>
+        <p class="closing-text">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa baiknya kepada kami.</p>
         <p class="closing-hashtag">#PremiumTasteEverydayPrice</p>
-        <!-- Hashtag acara -->
         
         <div class="social-share">
-          <!-- Bagian share ke sosmed -->
-          
           <p>Bagikan Undangan</p>
-          
           <div class="share-btns">
-            <!-- Container tombol share -->
-            
             <button onclick="shareWA()" class="btn-share wa">
-              <!-- 
-                TOMBOL SHARE WHATSAPP
-                onclick="shareWA()" = Fungsi JS untuk share WA
-                class="btn-share wa" = Styling tombol WA (hijau)
-              -->
-              
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <!-- SVG Icon WhatsApp -->
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                 <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.55 4.122 1.516 5.858L.057 23.8c-.09.404.261.757.665.667l6.088-1.446A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.659-.5-5.193-1.374l-.371-.213-3.85.913.93-3.742-.228-.387A9.954 9.954 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
               </svg>
               WhatsApp
             </button>
-            
             <button onclick="shareCopy()" class="btn-share copy">
-              <!-- 
-                TOMBOL COPY LINK
-                onclick="shareCopy()" = Fungsi JS copy link
-                class="btn-share copy" = Styling tombol (biasanya abu-abu)
-              -->
-              
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <!-- SVG Icon copy/link -->
                 <rect x="9" y="9" width="13" height="13" rx="2"/>
                 <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
               </svg>
@@ -753,13 +372,6 @@
 
     <!-- MUSIC TOGGLE: Tombol kontrol musik -->
     <div class="music-toggle" id="musicToggle" title="Toggle Musik">
-      <!-- 
-        TOMBOL FLOATING MUSIC
-        id="musicToggle" = Target JS untuk play/pause
-        title = Tooltip saat hover
-        Posisi: fixed (melayang di pojok)
-      -->
-      
       <svg id="musicIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <!-- SVG Icon musik (not balok) -->
         <path d="M9 18V5l12-2v13"/>
@@ -772,44 +384,13 @@
     </div>
     
     <audio id="bgMusic" loop>
-      <!-- 
-        ELEMEN AUDIO
-        id="bgMusic" = Target JS untuk kontrol
-        loop = Putar berulang
-      -->
-      
       <source src="assets/music.mp3" type="audio/mpeg" />
-      <!-- 
-        SUMBER AUDIO
-        🎵 REKOMENDASI FORMAT: MP3
-         BITRATE: 128 kbps (cukup untuk background)
-        🎵 DURASI: 2-3 menit (looping)
-        🎵 UKURAN: Max 3MB
-        Fallback: Browser akan pilih source yang support
-      -->
     </audio>
 
   </main>
 
   <!-- TOAST: Notifikasi popup -->
   <div class="toast" id="toast"></div>
-  <!-- 
-    ELEMEN TOAST
-    id="toast" = Target JS untuk tampilkan notifikasi
-    Posisi: fixed di bottom
-    Muncul saat: Copy berhasil, form submit, dll
-  -->
-
   <script src="js/main.js"></script>
-  <!-- 
-    JAVASCRIPT EKSTERNAL
-    File main.js berisi semua logika:
-    - Countdown timer
-    - Form handling
-    - Lightbox
-    - Music control
-    - Animasi scroll
-    Letak: folder js/main.js
-  -->
 </body>
 </html>
