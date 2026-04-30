@@ -5,7 +5,7 @@
 // ══════════════════════════════════════════════════
 // KONFIGURASI SUPABASE — ganti dengan milikmu!
 // ══════════════════════════════════════════════════
-const SUPABASE_URL = 'https://yykvenjzqxbhwjooddee.supabase.co/rest/v1/';   // ← ganti ini
+const SUPABASE_URL = 'https://yykvenjzqxbhwjooddee.supabase.co';   // ← ganti ini
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5a3Zlbmp6cXhiaHdqb29kZGVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1NDE4NjYsImV4cCI6MjA5MzExNzg2Nn0.AuDxGCB0mnoaJkwhvtvznmFVZ0R956PASnuUFSG7rrM'; // ← ganti ini
 
 // Helper: fetch wrapper untuk Supabase REST API
